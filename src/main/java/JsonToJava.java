@@ -1,5 +1,7 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
 
+@Getter
 public class JsonToJava {
     private final String id;
     private final String text;
@@ -17,26 +19,6 @@ public class JsonToJava {
         this.type = type;
         this.user = user;
         this.upvotes = upvotes;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public String getUser() {
-        return user;
-    }
-
-    public Integer getUpvotes() {
-        return upvotes;
     }
 
     @Override
